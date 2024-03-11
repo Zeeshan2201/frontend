@@ -12,6 +12,26 @@ const Faisal = () => {
         <div className="description">
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae autem aspernatur, est, recusandae beatae, sequi cum asperiores fugit consequuntur </p>
         </div>
+
+        <div className="box1">
+            <h2>Free Delivery</h2>
+            <p>For  WEBOTRICKS</p>
+            <p>Code:chomuisstupid</p>
+        </div>
+        <br />
+
+        <div className="box2">
+            <h2>10% Off</h2>
+            <p>For  ALL SHOPS</p>
+            <p>Code:chaddimaster</p>
+        </div>
+        <br />
+
+        <div className="box3">
+            <h2>10% Off</h2>
+            <p>For  WEBOTRICKS</p>
+            <p>Code:inkipinkiponki</p>
+        </div>
         
       </div>
     </div>
