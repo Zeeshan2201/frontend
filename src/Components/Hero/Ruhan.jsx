@@ -1,7 +1,12 @@
 import React from 'react'
 
-export const Ruhan = () => {
+const Ruhan = () => {
   return (
-    <div> </div>
+    <div>
+      <div className='hero-right'>
+        <h1>Ruhan</h1>
+      </div>  
+    </div>
   )
 }
+export default Ruhan
