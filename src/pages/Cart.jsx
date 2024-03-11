@@ -5,7 +5,6 @@ const Cart = () => {
   return (
     <div>
       {/* hello ruhan */}
-      {/* Shut up */}
       <CartItems/>
     </div>
   )
