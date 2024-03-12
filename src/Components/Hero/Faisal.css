@@ -1,3 +1,38 @@
 .card{
-    background: aqua;
+    background: #CFDFFB;
+    height: 580px;
+    width: 350px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 20px;
+    margin: 25px;
+    border-radius: 15px;
+}
+
+.heading{
+    color: #1658A8;
+    font-size: 16px;
+}
+
+.description{
+    font-size: 14px;
+}
+
+.box1{
+    box-shadow: 1px 1px 1px 1px;
+    background-color: white;
+    padding: 10px 10px 20px 10px;
+}
+
+.box1 h2{
+    font-weight: 600;
+}
+
+.box1 span{
+    font-weight: 600;
+}
+
+.code{
+    color: #1054A5;
+    font-weight: 600;
 }
