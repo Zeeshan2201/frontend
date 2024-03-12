@@ -10,20 +10,20 @@ const Faisal = () => {
         </div>
 
         <div className="description">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae autem aspernatur, est, recusandae beatae, sequi cum asperiores fugit consequuntur </p>
+            <p>Collect coupons from stores and apply to get special discount form stores </p>
         </div>
 
         <div className="box1">
             <h2>Free Delivery</h2>
             <p>For  WEBOTRICKS</p>
-            <p>Code:chomuisstupid</p>
+            <p>Code:dhinchakpooja</p>
         </div>
         <br />
 
         <div className="box2">
             <h2>10% Off</h2>
             <p>For  ALL SHOPS</p>
-            <p>Code:chaddimaster</p>
+            <p>Code:dollychaiwala</p>
         </div>
         <br />
 
