@@ -10,6 +10,7 @@ import Faisal from '../Components/Hero/Faisal'
 const Shop = () => {
   return (
     <div>
+      {/* prerna */}
       <Hero/>
       <Popular/>
       <Offers/>
