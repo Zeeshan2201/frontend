@@ -46,7 +46,7 @@ const Ruhan = () => {
                   </li>
                   <li class="pure-menu-item">
                     <a href="#" class="pure-menu-link">
-                      Age
+                      Age 10+
                     </a>
                   </li>
                   <li class="pure-menu-item">
