@@ -1,0 +1,26 @@
+.pure-menu-heading {
+    color: #308d46;
+}
+    
+.custom-display, .displaymenu {
+    /* To limit the menu width to 
+    the content of the menu: */
+    display: inline-block;
+}
+
+.displaymenu{
+    height: 373.68px;
+    width: 256.67px;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 14px mulish;
+}
+
+.outerdiv{
+    height: 502.75px;
+    width: 172.67px;
+    margin-left: 72px;
+    margin-top: 48px;
+}
+
+

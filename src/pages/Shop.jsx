@@ -10,15 +10,13 @@ import Faisal from '../Components/Hero/Faisal'
 const Shop = () => {
   return (
     <div>
+      <Ruhan />
       <Faisal />
       <Hero/>
       <Popular/>
       <Offers/>
       <NewCollections/>
       <NewsLetter />
-      <Ruhan />
-      
-
 
     </div>
   )
