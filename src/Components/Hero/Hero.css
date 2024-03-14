@@ -77,9 +77,13 @@
   margin-top: 25px;
 }
 
+.hero-right{
+  margin-left: -100px;
+}
+
 .first-img img{
   height: 350px;
-  width: 1000px;
+  width: 838px;
 }
 
 .second-img{
