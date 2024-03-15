@@ -10,8 +10,6 @@ import Faisal from '../Components/Hero/Faisal'
 const Shop = () => {
   return (
     <div>
-      {/* hello */}
-      {/* hey zeeshan */}
       <Hero/>
       <Popular/>
       <Offers/>
