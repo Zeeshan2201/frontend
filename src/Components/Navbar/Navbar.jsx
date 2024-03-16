@@ -1,35 +1,84 @@
 import React, { useContext, useState } from 'react'
 import './Navbar.css'
-import logo from '../Assets/logo.png';
-import cart_icon from '../Assets/cart_icon.png';
-import { Link } from 'react-router-dom';
-import { ShopContext } from '../../Context/ShopContext';
-
-const Navbar = () => {
-
+import webo from '../Assets/webo1.png'
+import off from '../Assets/off.png'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {  faBagShopping, faBars, faHeart, faRepeat, faSearch} from '@fortawesome/free-solid-svg-icons'
+import { Link } from 'react-router-dom'
+import { ShopContext } from '../../Context/ShopContext'
+export const Navbar = () => {
     const [menu,setMenu] = useState("shop");
     const {getTotalCartItems}= useContext(ShopContext);
-
   return (
-    <div className='navbar'>
-        <div className="nav-logo">
-            <img src={logo} alt="" />
-            <p>SHOPPER</p>
+    <>
+
+<div className='top'>
+   <p className='phar'><b>Summer Sale!! Flat 10% Off on Prepaid Orders, Apply Coupon SUMMER10 in your Cart to get Instant 10% Discount. Last Few Days!</b></p>    
+</div>
+    <div className="head-nav">
+        <div className="nav-img">
+        <img src={webo} alt="" />
         </div>
-        <ul className="nav-menu">
-            <li onClick={()=>{setMenu("shop")}}><Link style={{ textDecoration:'none'}} to='/'>Shop</Link>{menu==="shop"?<hr />:<></>}</li>
-            <li onClick={()=>{setMenu("mens")}}><Link style={{ textDecoration:'none'}} to='/mens'>Men</Link>{menu==="mens"?<hr />:<></>}</li>
-            <li onClick={()=>{setMenu("womens")}}><Link style={{ textDecoration:'none'}} to='/womens'>Women</Link>{menu==="womens"?<hr />:<></>}</li>
-            <li onClick={()=>{setMenu("kids")}}><Link style={{ textDecoration:'none'}} to='/kids'>Kids</Link>{menu==="kids"?<hr />:<></>}</li>
-        </ul>
-        <div className="nav-login-cart">
-            <Link to='/login'><button>Login</button></Link>
-            <Link to='/cart'><img src={cart_icon} alt="" /></Link>
-            <div className="nav-cart-count">{getTotalCartItems()}</div>
+        <div className="search-menu">
+            <select className='all'>
+            <option>All Categories </option>
+            <option>DIY Robots & Parts </option>
+            <option>DIY Learning Kits  </option>
+            <option>Hardware Projects </option>
+            <option>Software Projects </option>
+            <option>Electronic Components </option>
+            <option>Drone and Pents </option>
+            <option>Home and Outdoor </option>
+            <option>PCB and 3D model </option>
+            </select>
+            <input type="text" placeholder='Search for items...'/>
+            <div className="search-button">
+                <button><FontAwesomeIcon icon={faSearch} className='fasearch' /></button>
+            </div>
         </div>
-      
+        <div className="discount">
+            <img src={off} alt="" />
+        </div>
     </div>
+   <div className='nav-main'>
+    <div className="select">
+
+    <FontAwesomeIcon icon={faBars} className='bar' />
+    <select className='select-cart'> 
+            <option>Select Category</option>
+            <option>DIY Robots & Parts </option>
+            <option>DIY Learning Kits  </option>
+            <option>Hardware Projects </option>
+            <option>Software Projects </option>
+            <option>Electronic Components </option>
+            <option>Drone and Pents </option>
+            <option>Home and Outdoor </option>
+            <option>PCB and 3D model </option>
+            </select>
+    </div>
+
+    <div className="nav-option">
+        <p><ul><li>HOME</li></ul></p>
+        <select><option>OFFER</option>
+        <option>FLASH DEAL</option></select>
+        <p><ul><li>DISCOUNT</li></ul></p>
+        <p><ul><li>BECOME A VENDOR</li></ul></p>
+    </div>
+
+    <div className="nav-button">
+        <button>LOGIN/REGISTER</button>
+        <div className="line"></div>
+        <FontAwesomeIcon icon={faRepeat} className='dis' />
+        <div className="line"></div>
+        <FontAwesomeIcon icon={faHeart}className='dis' />
+        <div className="line"></div>
+        <FontAwesomeIcon icon={faBagShopping}className='dis' />
+
+    </div>
+
+   </div>
+    
+    </>
+    
   )
 }
-
-export default Navbar
