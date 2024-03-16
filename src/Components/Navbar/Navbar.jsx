@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {  faBagShopping, faBars, faHeart, faRepeat, faSearch} from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'react-router-dom'
 import { ShopContext } from '../../Context/ShopContext'
-export const Navbar = () => {
+const Navbar = () => {
     const [menu,setMenu] = useState("shop");
     const {getTotalCartItems}= useContext(ShopContext);
   return (
@@ -82,3 +82,4 @@ export const Navbar = () => {
     
   )
 }
+export default Navbar;
